@@ -1,13 +1,19 @@
 {
-    "hints": {},
+    "hints": {
+        "optintoasset(uint64)string": {
+            "call_config": {
+                "no_op": "CALL"
+            }
+        }
+    },
     "source": {
-        "approval": "I3ByYWdtYSB2ZXJzaW9uIDgKaW50Y2Jsb2NrIDAKdHhuIE51bUFwcEFyZ3MKaW50Y18wIC8vIDAKPT0KYm56IG1haW5fbDIKZXJyCm1haW5fbDI6CnR4biBPbkNvbXBsZXRpb24KaW50Y18wIC8vIE5vT3AKPT0KYm56IG1haW5fbDQKZXJyCm1haW5fbDQ6CnR4biBBcHBsaWNhdGlvbklECmludGNfMCAvLyAwCj09CmFzc2VydApwdXNoaW50IDEgLy8gMQpyZXR1cm4=",
+        "approval": "I3ByYWdtYSB2ZXJzaW9uIDgKaW50Y2Jsb2NrIDAgMQpieXRlY2Jsb2NrIDB4NDE3MzczNjU3NDIwNDk0NAp0eG4gTnVtQXBwQXJncwppbnRjXzAgLy8gMAo9PQpibnogbWFpbl9sNAp0eG5hIEFwcGxpY2F0aW9uQXJncyAwCnB1c2hieXRlcyAweDEyOThiYTYzIC8vICJvcHRpbnRvYXNzZXQodWludDY0KXN0cmluZyIKPT0KYm56IG1haW5fbDMKZXJyCm1haW5fbDM6CnR4biBPbkNvbXBsZXRpb24KaW50Y18wIC8vIE5vT3AKPT0KdHhuIEFwcGxpY2F0aW9uSUQKaW50Y18wIC8vIDAKIT0KJiYKYXNzZXJ0CnR4bmEgQXBwbGljYXRpb25BcmdzIDEKYnRvaQpjYWxsc3ViIG9wdGludG9hc3NldF8yCnN0b3JlIDAKcHVzaGJ5dGVzIDB4MTUxZjdjNzUgLy8gMHgxNTFmN2M3NQpsb2FkIDAKY29uY2F0CmxvZwppbnRjXzEgLy8gMQpyZXR1cm4KbWFpbl9sNDoKdHhuIE9uQ29tcGxldGlvbgppbnRjXzAgLy8gTm9PcAo9PQpibnogbWFpbl9sNgplcnIKbWFpbl9sNjoKdHhuIEFwcGxpY2F0aW9uSUQKaW50Y18wIC8vIDAKPT0KYXNzZXJ0CmNhbGxzdWIgY3JlYXRlXzAKaW50Y18xIC8vIDEKcmV0dXJuCgovLyBjcmVhdGUKY3JlYXRlXzA6CnByb3RvIDAgMApieXRlY18wIC8vICJBc3NldCBJRCIKaW50Y18wIC8vIDAKYXBwX2dsb2JhbF9wdXQKcmV0c3ViCgovLyBiYXNpY19jaGVja3MKYmFzaWNjaGVja3NfMToKcHJvdG8gMCAxCnR4biBSZWtleVRvCmdsb2JhbCBaZXJvQWRkcmVzcwo9PQp0eG4gQ2xvc2VSZW1haW5kZXJUbwpnbG9iYWwgWmVyb0FkZHJlc3MKPT0KJiYKdHhuIEFzc2V0Q2xvc2VUbwpnbG9iYWwgWmVyb0FkZHJlc3MKPT0KJiYKcmV0c3ViCgovLyBvcHRpbnRvYXNzZXQKb3B0aW50b2Fzc2V0XzI6CnByb3RvIDEgMQpwdXNoYnl0ZXMgMHggLy8gIiIKdHhuIFNlbmRlcgpnbG9iYWwgQ3JlYXRvckFkZHJlc3MKPT0KLy8gdW5hdXRob3JpemVkCmFzc2VydApjYWxsc3ViIGJhc2ljY2hlY2tzXzEKYXNzZXJ0CnR4biBTZW5kZXIKZ2xvYmFsIENyZWF0b3JBZGRyZXNzCj09CmFzc2VydAppdHhuX2JlZ2luCnB1c2hpbnQgNCAvLyBheGZlcgppdHhuX2ZpZWxkIFR5cGVFbnVtCnR4bmEgQXNzZXRzIDAKaXR4bl9maWVsZCBYZmVyQXNzZXQKZ2xvYmFsIEN1cnJlbnRBcHBsaWNhdGlvbkFkZHJlc3MKaXR4bl9maWVsZCBBc3NldFJlY2VpdmVyCmludGNfMCAvLyAwCml0eG5fZmllbGQgQXNzZXRBbW91bnQKaXR4bl9zdWJtaXQKYnl0ZWNfMCAvLyAiQXNzZXQgSUQiCmZyYW1lX2RpZyAtMQphcHBfZ2xvYmFsX3B1dApwdXNoYnl0ZXMgMHgwMDBmNDE3MzczNjU3NDIwNGY3MDc0NjU2NDIwNjk2ZTIxIC8vIDB4MDAwZjQxNzM3MzY1NzQyMDRmNzA3NDY1NjQyMDY5NmUyMQpmcmFtZV9idXJ5IDAKcmV0c3Vi",
         "clear": "I3ByYWdtYSB2ZXJzaW9uIDgKcHVzaGludCAwIC8vIDAKcmV0dXJu"
     },
     "state": {
         "global": {
-            "num_byte_slices": 1,
-            "num_uints": 0
+            "num_byte_slices": 0,
+            "num_uints": 1
         },
         "local": {
             "num_byte_slices": 0,
@@ -17,10 +23,10 @@
     "schema": {
         "global": {
             "declared": {
-                "global_text": {
-                    "type": "bytes",
-                    "key": "GlobalText",
-                    "descr": "global state text"
+                "assetID": {
+                    "type": "uint64",
+                    "key": "Asset ID",
+                    "descr": "Asset ID"
                 }
             },
             "reserved": {}
@@ -32,7 +38,20 @@
     },
     "contract": {
         "name": "BurnApp",
-        "methods": [],
+        "methods": [
+            {
+                "name": "optintoasset",
+                "args": [
+                    {
+                        "type": "uint64",
+                        "name": "assetID"
+                    }
+                ],
+                "returns": {
+                    "type": "string"
+                }
+            }
+        ],
         "networks": {}
     },
     "bare_call_config": {

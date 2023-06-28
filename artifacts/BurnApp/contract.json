@@ -1,5 +1,18 @@
 {
     "name": "BurnApp",
-    "methods": [],
+    "methods": [
+        {
+            "name": "optintoasset",
+            "args": [
+                {
+                    "type": "uint64",
+                    "name": "assetID"
+                }
+            ],
+            "returns": {
+                "type": "string"
+            }
+        }
+    ],
     "networks": {}
 }

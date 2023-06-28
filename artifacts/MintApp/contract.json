@@ -1,5 +1,61 @@
 {
     "name": "MintApp",
-    "methods": [],
+    "methods": [
+        {
+            "name": "update_contracts",
+            "args": [],
+            "returns": {
+                "type": "string"
+            }
+        },
+        {
+            "name": "mint_tokens",
+            "args": [
+                {
+                    "type": "uint64",
+                    "name": "amount"
+                },
+                {
+                    "type": "uint64",
+                    "name": "decimals"
+                },
+                {
+                    "type": "string",
+                    "name": "assetName"
+                },
+                {
+                    "type": "string",
+                    "name": "unitName"
+                }
+            ],
+            "returns": {
+                "type": "uint64"
+            }
+        },
+        {
+            "name": "send_tokens",
+            "args": [
+                {
+                    "type": "uint64",
+                    "name": "amount"
+                }
+            ],
+            "returns": {
+                "type": "string"
+            }
+        },
+        {
+            "name": "burn_tokens",
+            "args": [
+                {
+                    "type": "uint64",
+                    "name": "amount"
+                }
+            ],
+            "returns": {
+                "type": "string"
+            }
+        }
+    ],
     "networks": {}
 }

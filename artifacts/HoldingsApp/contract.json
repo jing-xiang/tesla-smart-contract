@@ -1,5 +1,42 @@
 {
     "name": "HoldingsApp",
-    "methods": [],
+    "methods": [
+        {
+            "name": "update_price",
+            "args": [
+                {
+                    "type": "uint64",
+                    "name": "price"
+                }
+            ],
+            "returns": {
+                "type": "string"
+            }
+        },
+        {
+            "name": "optintoasset",
+            "args": [
+                {
+                    "type": "uint64",
+                    "name": "assetID"
+                }
+            ],
+            "returns": {
+                "type": "string"
+            }
+        },
+        {
+            "name": "buy_tokens",
+            "args": [
+                {
+                    "type": "uint64",
+                    "name": "amount"
+                }
+            ],
+            "returns": {
+                "type": "string"
+            }
+        }
+    ],
     "networks": {}
 }
