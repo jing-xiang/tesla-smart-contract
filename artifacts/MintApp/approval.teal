@@ -6,7 +6,7 @@ intc_0 // 0
 ==
 bnz main_l10
 txna ApplicationArgs 0
-pushbytes 0x46e70246 // "update_contracts()string"
+pushbytes 0x36de1350 // "update_addresses()string"
 ==
 bnz main_l9
 txna ApplicationArgs 0
@@ -101,7 +101,7 @@ intc_0 // 0
 !=
 &&
 assert
-callsub updatecontracts_2
+callsub updateaddresses_2
 store 0
 bytec_2 // 0x151f7c75
 load 0
@@ -160,8 +160,8 @@ global ZeroAddress
 &&
 retsub
 
-// update_contracts
-updatecontracts_2:
+// update_addresses
+updateaddresses_2:
 proto 0 1
 bytec_1 // ""
 txn Sender

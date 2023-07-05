@@ -391,7 +391,7 @@ const updatecontracts = async (appID, holdingsaddr, burnaddr) => {
   const txn = [
     {
       method: getMethod(
-        "update_contracts",
+        "update_addresses",
         "../artifacts/MintApp/contract.json"
       ),
       appAccounts: [holdingsaddr, burnaddr],

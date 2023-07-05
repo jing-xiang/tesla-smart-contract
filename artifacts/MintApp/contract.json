@@ -2,7 +2,7 @@
     "name": "MintApp",
     "methods": [
         {
-            "name": "update_contracts",
+            "name": "update_addresses",
             "args": [],
             "returns": {
                 "type": "string"

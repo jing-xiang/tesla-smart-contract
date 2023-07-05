@@ -159,6 +159,11 @@ describe("Success Tests", function () {
 
     await algotxn.optIntoAsset(buyer, assetID);
 
+    const initialappinfo = await algodClient
+      .accountInformation(algosdk.getApplicationAddress(holdingsappId))
+      .do();
+    const initial = initialappinfo.amount;
+
     const paymenttxn = [
       {
         txn: algosdk.makePaymentTxnWithSuggestedParamsFromObject({
@@ -192,5 +197,7 @@ describe("Success Tests", function () {
     const tokens_left = assetsleft["amount"];
     //assert the correct nunmber of tokens left in the holdings contract
     assert.equal(Number(tokens_left), number - amount);
+    const end = contractInfo.amount;
+    assert.equal(initial - end, -(currentprice * amount));
   });
 });

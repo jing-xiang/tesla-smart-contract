@@ -1,6 +1,6 @@
 #pragma version 8
 intcblock 0 1 4
-bytecblock 0x43757272656e74205072696365 0x151f7c75 0x 0x4173736574204944
+bytecblock 0x43757272656e74205072696365 0x151f7c75 0x4173736574204944 0x
 txn NumAppArgs
 intc_0 // 0
 ==
@@ -93,7 +93,7 @@ return
 // create
 create_0:
 proto 0 0
-bytec_3 // "Asset ID"
+bytec_2 // "Asset ID"
 intc_0 // 0
 app_global_put
 bytec_0 // "Current Price"
@@ -123,7 +123,7 @@ retsub
 // update_price
 updateprice_2:
 proto 1 1
-bytec_2 // ""
+bytec_3 // ""
 txn Sender
 global CreatorAddress
 ==
@@ -145,7 +145,7 @@ retsub
 // optintoasset
 optintoasset_3:
 proto 1 1
-bytec_2 // ""
+bytec_3 // ""
 txn Sender
 global CreatorAddress
 ==
@@ -167,7 +167,7 @@ itxn_field AssetReceiver
 intc_0 // 0
 itxn_field AssetAmount
 itxn_submit
-bytec_3 // "Asset ID"
+bytec_2 // "Asset ID"
 frame_dig -1
 app_global_put
 pushbytes 0x000f4173736574204f7074656420696e21 // 0x000f4173736574204f7074656420696e21
@@ -177,7 +177,7 @@ retsub
 // buy_tokens
 buytokens_4:
 proto 1 1
-bytec_2 // ""
+bytec_3 // ""
 global CurrentApplicationAddress
 txna Assets 0
 asset_holding_get AssetBalance
@@ -208,6 +208,11 @@ assert
 frame_dig -1
 intc_0 // 0
 >
+assert
+txna Assets 0
+bytec_2 // "Asset ID"
+app_global_get
+==
 assert
 itxn_begin
 intc_2 // axfer

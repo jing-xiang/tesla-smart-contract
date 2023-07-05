@@ -11,10 +11,6 @@ const getAlgodClient = () => {
   return algodClient;
 };
 
-const appID = parseInt(process.env.NEXT_PUBLIC_APP_ID);
-console.log(appID);
-//const appAddress = algosdk.getApplicationAddress(appID);
-
 const readGlobalState = async (appId) => {
   const app = await algodClient.getApplicationByID(appId).do();
 

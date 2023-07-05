@@ -48,7 +48,7 @@ def basic_checks():
 
 
 @app.external(authorize=Authorize.only(Global.creator_address()))
-def update_contracts(*,output: abi.String): 
+def update_addresses(*,output: abi.String): 
     return Seq(
         Assert(Txn.sender() == Global.creator_address()),
         Assert(basic_checks()),
@@ -70,6 +70,7 @@ def mint_tokens(
         Assert(Txn.sender() == Global.creator_address()),
         Assert(Balance(Txn.sender()) >= Int(1000)), #Check if deployer has enough algos to pay for txn fees
         Assert(app.state.assetID.get()==Int(0)), #Check if there is already an assset existing in the account
+        Assert(Txn.fee() == Int(2000000)),
         InnerTxnBuilder.Begin(),
         InnerTxnBuilder.SetFields(
             {

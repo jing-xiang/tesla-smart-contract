@@ -85,6 +85,7 @@ def buy_tokens(amount: abi.Uint64,*, output: abi.String):
         Assert(Gtxn[0].amount() == amount.get() * app.state.current_price.get()),
         Assert(Gtxn[0].type_enum() == TxnType.Payment),
         Assert(amount.get() > Int(0)),
+        Assert(Txn.assets[0] == app.state.assetID.get()),
         # Transfer Asset
         InnerTxnBuilder.Begin(),
         InnerTxnBuilder.SetFields(
